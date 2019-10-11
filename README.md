@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 课程结题
 
-## Available Scripts
+## 题目：个人网站的设计与实现
 
-In the project directory, you can run:
+## 技术栈
 
-### `yarn start`
+- React
+- Node
+- ExpressJS
+- MongoDB
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 项目概述
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+&emsp;&emsp;本项目为学校结题项目，项目主要内容为做一个自己的个人网站。
 
-### `yarn test`
+## 主要功能
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-[ ] 登录
+    -[x] 表单验证
+    -[x] token验证
+    -[ ] token过期配置
+    -[x] 页面跳转
+-[ ] 个人主页
+    -[ ] 主页文章点赞
+    -[ ] 主页文章分享
+    -[ ] 主页文章删除
+    -[ ] 主页文章排序
+    -[ ] 主页文章编写
+-[ ] 日志
+    -[ ] 日志模板编写
+    -[ ] 日志背景换肤
+-[ ] 音乐
+    -[ ] 接入网易云音乐免费乐库
+    -[ ] 动画播放器
+-[ ] 留言板
+    -[ ] 留言板功能（自己封装组件）
+    -[ ] 接入搜狐畅言或者来必力留言模块
+-[ ] 相册
+    -[ ] 照片上传
+    -[ ] 相册浏览
+    -[ ] 图片懒加载
+-[ ] 个人资料
+    -[ ] 个人基本信息CRUD
+-[ ] 设置
+-[ ] 主题切换
+-[ ] 404页面
 
-### `yarn build`
+## 性能优化
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 开发环境
+-[x] antd按需加载，避免引入过多的包。
+-[x] happypack多核打包，加快打包速度。
+-[x] create-react-app内置了`摇树`操作，减少非使用的引入项。
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 生产环境
+-[x] 过滤调试代码 `console.log`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## 上线部署
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+&emsp;&emsp;预计上线部署在阿里云服务器，操作系统为`ubuntu 18.0.4`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+&emsp;&emsp;为了处理高并发需求，采用nginx代理。
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
