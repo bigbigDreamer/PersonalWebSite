@@ -74,7 +74,7 @@
 
 <img width="200" height="200" src="https://avatars2.githubusercontent.com/u/39019913?s=460&v=4"  style="border-radius: 50%"/>
 
-## License [MIT](https://github.com/bigbigDreamer/PersonalWebSite/blob/master/LICENSE)
+## License [GNU](https://github.com/bigbigDreamer/PersonalWebSite/blob/master/LICENSE)
 
 Copyright (c) 2019 Eric Wang
 
