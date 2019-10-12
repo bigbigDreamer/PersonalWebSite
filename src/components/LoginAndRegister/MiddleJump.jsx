@@ -1,6 +1,5 @@
 import React, {Component} from "react"
 import {localCache} from '../../localCache'
-import {Button, notification} from 'antd';
 
 export default class MiddleJump extends Component {
 

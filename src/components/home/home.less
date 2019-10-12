@@ -1,0 +1,48 @@
+.home {
+  height: 100%;
+
+  // 主页顶部导航
+  .header {
+    width: 100%;
+    height: 320px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      // 开启高斯模糊
+      filter: blur(1px);
+      //backdrop-filter: blur(8px)
+    }
+
+    .container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 28px auto;
+      width: 500px;
+      z-index: 999;
+      text-align: center;
+
+      p {
+        font-size: 58px;
+        margin: 0;
+        padding: 0;
+        color: #1bc3fb;
+        text-align: center;
+        text-shadow: 0 0 8px #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // 主内容区域
+  .main {
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    padding: 32px 150px 32px 150px ;
+  }
+}
