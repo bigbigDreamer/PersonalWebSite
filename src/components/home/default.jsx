@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Card, Icon, Avatar, BackTop, List} from 'antd';
 import './default.less'
-import axios from 'axios'
+import {getArticle,getRecommendData} from '../../api/home'
 
 const {Meta} = Card;
 
@@ -14,20 +14,21 @@ export default class Default extends Component {
     };
 
     componentDidMount() {
-        axios.get('http://com.cn/getArticle')
+        // 获取所有文章
+        getArticle('getArticle')
             .then(data => {
                 this.setState({
                     articleList: data.data
                 })
-            })
-            .catch(err => Promise.reject(err));
+            });
 
-        axios.get('http://com.cn/getRecommendData')
+        // 获取所有的推荐文章
+        getRecommendData('getRecommendData')
             .then(data => {
                   this.setState({
                       recommendedList:data.data
                   })
-            })
+            });
     }
 
     render() {

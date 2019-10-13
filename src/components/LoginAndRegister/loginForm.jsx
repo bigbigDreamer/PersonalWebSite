@@ -33,7 +33,7 @@ class NormalLoginForm extends Component {
 
                 // 发送模拟请求数据
                 login('login',values).then(data => {
-                        console.log(data);
+                        // console.log(data);
                         // 路由跳转
                         if (data.data.status === 200) {
                             notification.success({
