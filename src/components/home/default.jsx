@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import {Card, Icon, Avatar, BackTop, List} from 'antd';
 import './default.less'
 import axios from 'axios'
-import browser from "less/lib/less-browser/browser";
 
 const {Meta} = Card;
 
