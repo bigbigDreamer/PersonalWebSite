@@ -3,7 +3,8 @@ import {Form, Icon, Input, Button, Checkbox, notification} from 'antd';
 import './loginForm.less'
 import propTypes from 'prop-types'
 import {localCache} from "../../localCache";
-import axios from "axios";
+import {login} from '../../api/login/index'
+
 
 
 class NormalLoginForm extends Component {
@@ -31,11 +32,7 @@ class NormalLoginForm extends Component {
 
 
                 // 发送模拟请求数据
-                axios.get('http://com.cn/login', {
-                    params: values
-
-                })
-                    .then(data => {
+                login('login',values).then(data => {
                         console.log(data);
                         // 路由跳转
                         if (data.data.status === 200) {
@@ -54,8 +51,7 @@ class NormalLoginForm extends Component {
                                     '用户名或密码错误！',
                             });
                         }
-                    })
-                    .catch(err => Promise.reject(err))
+                    });
             }
         });
     };

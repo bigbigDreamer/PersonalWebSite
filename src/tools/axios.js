@@ -7,8 +7,8 @@ import axios from 'axios'
 import {baseUrl} from "./config";
 
 class HttpRequest {
-    constructor(baseUrl = baseUrl) {
-        this.baseUrl = baseUrl;
+    constructor(baseUrls = baseUrl) {
+        this.baseUrl = baseUrls;
         this.queue = {};
     }
 
@@ -17,31 +17,29 @@ class HttpRequest {
      */
     getInsideConfig() {
         return {
-            baseUrl: this.baseUrl,
+            baseURL: this.baseUrl,
             method: 'get',
-            headers: {}
         }
     }
 
     // 拦截器
     interceptors(instance, url) {
         // 添加请求拦截器
-        instance.interceptors.request.use(function (config) {
+        instance.interceptors.request.use( config => {
             // 在发送请求之前做些什么
             this.queue[url] = true;
             return config;
-        }, function (error) {
+        },  error => {
             // 对请求错误做些什么
             return Promise.reject(error);
         });
 
         // 添加响应拦截器
-        instance.interceptors.response.use(function (response) {
+        instance.interceptors.response.use( response => {
             // 对响应数据做点什么
-
             delete this.queue[url];
             return response;
-        }, function (error) {
+        },  error => {
             // 对响应错误做点什么
             delete this.queue[url];
             return Promise.reject(error);

@@ -1,1 +1,1 @@
-export const baseUrl = 'http://com.cn/';
+export const baseUrl = 'http://com.cn/'
