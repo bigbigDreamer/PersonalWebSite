@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 import Qs from 'qs'
 
-Mock.mock(/http:\/\/com.cn\/customer.*/,'get', option => {
+Mock.mock(/http:\/\/com.cn\/login.*/,'get', option => {
 
     const loginInfo = Qs.parse(option.url.slice(option.url.indexOf('?')+1,));
     console.log(loginInfo);

@@ -31,7 +31,7 @@ class NormalLoginForm extends Component {
 
 
                 // 发送模拟请求数据
-                axios.get('http://com.cn/customer', {
+                axios.get('http://com.cn/login', {
                     params: values
 
                 })
@@ -55,6 +55,7 @@ class NormalLoginForm extends Component {
                             });
                         }
                     })
+                    .catch(err => Promise.reject(err))
             }
         });
     };

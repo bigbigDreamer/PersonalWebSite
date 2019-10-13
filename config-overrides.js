@@ -1,4 +1,4 @@
-const {override, fixBabelImports, addLessLoader} = require('customize-cra');
+const {override, fixBabelImports, addLessLoader,disableEsLint} = require('customize-cra');
 module.exports = override(
     fixBabelImports('import', {
         libraryName: 'antd',
@@ -9,4 +9,5 @@ module.exports = override(
         javascriptEnabled: true,
         // modifyVars: {'@primary-color': '#1DA57A'},
     }),
+    disableEsLint()
 );
