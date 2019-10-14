@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Card, Icon, Avatar, BackTop, List} from 'antd';
 import './default.less'
-import {getArticle,getRecommendData} from '../../api/home'
+import {getArticle, getRecommendData} from '../../api/home'
 
 const {Meta} = Card;
 
@@ -25,11 +25,26 @@ export default class Default extends Component {
         // 获取所有的推荐文章
         getRecommendData('getRecommendData')
             .then(data => {
-                  this.setState({
-                      recommendedList:data.data
-                  })
+                this.setState({
+                    recommendedList: data.data
+                })
             });
     }
+
+    // 获取细节，其实有两种实现方案
+    // 一种是：params，刷新不会丢失
+    // 另外一种是：query，但是刷新会丢失数据
+    // 还有一种方式是通过加入params 进行数据传，但是也会刷新丢失
+    getDetails = (key) => {
+        console.log(key);
+        const {history} = this.props;
+        history.push({
+            pathname:'/home/'+key,
+            query:{
+                name:"<h1>Hello World</h1>"
+            }
+        })
+    };
 
     render() {
         const data = this.state.recommendedList;
@@ -48,8 +63,8 @@ export default class Default extends Component {
                                     cover={
                                         <img
                                             style={{height: 280}}
-                                            alt="example"
-
+                                            onClick={() => this.getDetails(item.key)}
+                                            alt="coverImg"
                                             src={item.cover}
                                         />
                                     }
@@ -114,4 +129,5 @@ export default class Default extends Component {
             </div>
         )
     }
+
 }
