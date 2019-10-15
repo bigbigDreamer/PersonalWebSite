@@ -9,7 +9,9 @@ const {Meta} = Card;
 export default class Default extends Component {
 
     state = {
+        // 文章列表
         articleList: [],
+        // 推荐文章列表
         recommendedList: []
     };
 
@@ -39,10 +41,7 @@ export default class Default extends Component {
         console.log(key);
         const {history} = this.props;
         history.push({
-            pathname:'/home/'+key,
-            query:{
-                name:"<h1>Hello World</h1>"
-            }
+            pathname: '/home/article' + key
         })
     };
 
@@ -105,8 +104,8 @@ export default class Default extends Component {
                             <Icon type="edit" key="edit"/>,
                         ]}
                     >
-                        {/*  右侧导航区域  */}
 
+                        {/*  右侧导航区域  */}
                     </Card>
                     <div className={"RecommendedToday"}>
                         <p className="title">

@@ -10,3 +10,16 @@ Mock.mock(/http:\/\/com.cn\/getArticle.*/, 'get', _ => {
 });
 
 Mock.mock(/http:\/\/com.cn\/getRecommendData.*/,'get', _ => recommend_List);
+
+Mock.mock(/http:\/\/com.cn\/getDetailsByKey.*/,'post', options => {
+    const {key} = JSON.parse(options.body);
+    const res = Article_List.filter(item => {
+        return item.key === Number.parseInt(key);
+    });
+
+    // console.log(res,'res')
+    return {
+        status:200,
+        data: res[0]
+    }
+});

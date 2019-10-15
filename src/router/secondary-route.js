@@ -11,7 +11,7 @@ export function SecondaryRoute() {
     return (
         <div>
             <Route path={'/home/'} component={Defaults} exact/>
-            <Route path={'/home/:key'} component={ArticleDetails} />
+            <Route path={'/home/article:key'} component={ArticleDetails} />
             <Route path={'/home/journal'} component={Journal}/>
             <Route path={'/home/song'} component={Song}/>
             <Route path={'/home/comment'} component={Comment}/>
