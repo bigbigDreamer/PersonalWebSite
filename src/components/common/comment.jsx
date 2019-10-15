@@ -31,7 +31,8 @@ export default class Comments extends React.Component {
 
     static propTypes = {
         key: propTypes.number.isRequired,
-        comments: propTypes.array.isRequired
+        comments: propTypes.array.isRequired,
+        addComment: propTypes.func.isRequired
     };
     state = {
         comments: [],
@@ -39,15 +40,10 @@ export default class Comments extends React.Component {
         value: '',
     };
 
-    // 数据初始化
-    componentDidMount() {
-        const {comments}  = this.props;
-        this.setState({
-            comments
-        });
-    }
 
+    // 提交评论
     handleSubmit = () => {
+
         if (!this.state.value) {
             return;
         }
@@ -57,6 +53,13 @@ export default class Comments extends React.Component {
         });
 
         setTimeout(() => {
+
+            this.props.addComment({
+                author: '作者',
+                avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+                content: this.state.value,
+                datetime: moment().fromNow(),
+            });
             this.setState({
                 submitting: false,
                 value: '',
@@ -67,12 +70,13 @@ export default class Comments extends React.Component {
                         content: <p>{this.state.value}</p>,
                         datetime: moment().fromNow(),
                     },
-                    ...this.state.comments,
+                    ...this.state.comments
                 ],
             });
         }, 1000);
     };
 
+    // 改变
     handleChange = e => {
         this.setState({
             value: e.target.value,
@@ -80,8 +84,9 @@ export default class Comments extends React.Component {
     };
 
     render() {
-        const {comments, submitting, value} = this.state;
+        const {submitting, value} = this.state;
 
+        const {comments} = this.props;
         return (
             <div>
                 {comments.length > 0 && <CommentList comments={comments}/>}
