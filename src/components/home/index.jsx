@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row, Col, Input, Tabs, Icon} from 'antd';
+import {Row, Col, Input, Tabs, Icon, BackTop} from 'antd';
 import './home.less'
 import {SecondaryRoute} from '../../router/secondary-route'
 import headerImg from '../../assets/images/header.jpg'
@@ -63,7 +63,7 @@ export default class Index extends Component {
                                     size={'large'}
                                 />
                                 <br/>
-                                <Tabs defaultActiveKey="1" onChange={(activeKey) => this.handleChangeTab(activeKey)}>
+                                <Tabs defaultActiveKey="1" onTabClick={(activeKey) => this.handleChangeTab(activeKey)}>
                                     <TabPane
                                         tab={
                                             <span>
@@ -121,6 +121,7 @@ export default class Index extends Component {
                     {/*主内容区域*/}
                     <Col span={24}>
                         <div className="main">
+                            <BackTop/>
                             <SecondaryRoute/>
                         </div>
                     </Col>

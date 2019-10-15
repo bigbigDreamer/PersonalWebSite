@@ -23,3 +23,19 @@ export const getDetailsByKey = (url, data) => {
         data
     });
 };
+
+export const handleDoLike = (url,data) => {
+    return http.request({
+        baseURL: baseUrl + url,
+        method: 'post',
+        data
+    });
+};
+
+export const changeArticleEye = (url,data) => {
+    return http.request({
+        baseURL: baseUrl + url,
+        method: 'post',
+        data
+    });
+};

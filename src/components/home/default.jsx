@@ -1,7 +1,7 @@
 import React, {Component} from "react"
-import {Card, Icon, Avatar, BackTop, List} from 'antd';
+import {Card, Icon, Avatar, Badge , List} from 'antd';
 import './default.less'
-import {getArticle, getRecommendData} from '../../api/home'
+import {getArticle, getRecommendData,handleDoLike} from '../../api/home'
 
 const {Meta} = Card;
 
@@ -45,12 +45,30 @@ export default class Default extends Component {
         })
     };
 
+    /*
+     * @params key {Number} 当前文章的id
+     * @desc 根据key值去修改对应文章的like
+     */
+    handleDoLike = (key) => {
+        handleDoLike('handleDoLike',{
+            key
+        })
+            .then(data => {
+                // console.log(data);
+                getArticle('getArticle')
+                    .then(data => {
+                        this.setState({
+                            articleList: data.data
+                        })
+                    });
+            })
+    };
+
     render() {
         const data = this.state.recommendedList;
         const {articleList} = this.state;
         return (
             <div className={'default'}>
-                <BackTop/>
                 {/* 左侧导航区域 */}
                 <div className="leftContent">
                     {
@@ -68,9 +86,16 @@ export default class Default extends Component {
                                         />
                                     }
                                     actions={[
-                                        <Icon type="eye" key={'eye'}/>,
-                                        <Icon type="like"/>,
-                                        <Icon type="message" key={'message'}/>,
+                                        <Badge count={item.eye}  offset={[15,5]}>
+                                            <Icon type="eye" key={'eye'}/>
+                                        </Badge>
+                                        ,
+                                        <Badge count={item.like}  offset={[15,5]}>
+                                        <Icon type="like" onClick={() => this.handleDoLike(item.key)}/>
+                                        </Badge>,
+                                        <Badge count={item.message}  offset={[15,5]}>
+                                        <Icon type="message" key={'message'}/>
+                                        </Badge>,
                                         <Icon type="edit" key="edit"/>,
                                     ]}
                                 >
