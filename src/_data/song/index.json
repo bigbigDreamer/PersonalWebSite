@@ -1,0 +1,253 @@
+[
+  {
+    "parent": "音乐综合",
+    "children": [
+      {
+        "name": "千千音乐",
+        "href": "http://music.taihe.com/?fr=hao123"
+      },
+      {
+        "name": "echo回声",
+        "href": "http://www.app-echo.com/#/"
+      },
+      {
+        "name": "酷狗音乐",
+        "href": "http://www.kugou.com/"
+      },
+      {
+        "name": "酷我音乐",
+        "href": "http://www.kuwo.cn/"
+      },
+      {
+        "name": "QQ音乐",
+        "href": "https://y.qq.com/"
+      },
+      {
+        "name": "一听音乐网",
+        "href": "https://www.1ting.com/"
+      },
+      {
+        "name": "九酷音乐",
+        "href": "http://www.9ku.com/"
+      },
+      {
+        "name": "九天音乐",
+        "href": "http://www.9sky.com/"
+      },
+      {
+        "name": "356音乐网",
+        "href": "http://www.yue365.com/"
+      },
+      {
+        "name": "搜狗音乐",
+        "href": "https://y.qq.com/"
+      },
+      {
+        "name": "虾米音乐",
+        "href": "https://www.xiami.com/"
+      },
+      {
+        "name": "网易云音乐",
+        "href": "http://music.163.com/"
+      },
+      {
+        "name": "移动音乐门户",
+        "href": "http://music.10086.cn/"
+      },
+      {
+        "name": "乐播",
+        "href": "http://music.taihe.com/?fr=hao123"
+      }
+    ]
+  },
+  {
+    "parent": "DJ音乐",
+    "children": [
+      {
+        "name": "DJ嗨嗨",
+        "href": "http://www.djkk.com/"
+      },
+      {
+        "name": "清风DJ音乐网",
+        "href": "http://www.vvvdj.com/"
+      },
+      {
+        "name": "新地DJ",
+        "href": "http://www.5ydj.com/"
+      },
+      {
+        "name": "水晶DJ网",
+        "href": "http://www.dj97.com/"
+      },
+      {
+        "name": "DJ前卫音乐",
+        "href": "http://www.dj520.com/"
+      },
+      {
+        "name": "深港DJ",
+        "href": "http://www.ik123.com/"
+      },
+      {
+        "name": "DJ527",
+        "href": "http://www.djhaiba.com/"
+      }
+    ]
+  },
+  {
+    "parent": "MV欣赏",
+    "children": [
+      {
+        "name": "音悦台高清MV",
+        "href": "http://www.yinyuetai.com/"
+      },
+      {
+        "name": "优酷MV",
+        "href": "https://music.youku.com/"
+      },
+      {
+        "name": "土豆音乐",
+        "href": "https://music.tudou.com/"
+      },
+      {
+        "name": "酷6音乐",
+        "href": "http://mv.ku6.com/"
+      },
+      {
+        "name": "百度视频MV",
+        "href": "http://video.baidu.com/childchannal/videomv/videomv.html"
+      },
+      {
+        "name": "爱奇艺音乐",
+        "href": "http://music.iqiyi.com/"
+      },
+      {
+        "name": "腾讯MV",
+        "href": "https://v.qq.com/music/"
+      },
+      {
+        "name": "乐视MV",
+        "href": "http://music.letv.com/"
+      }
+    ]
+  },
+  {
+    "parent": "榜单专辑",
+    "children": [
+      {
+        "name": "歌曲TOP500",
+        "href": "http://music.taihe.com/top/top500.html"
+      },
+      {
+        "name": "儿歌专辑",
+        "href": "http://music.baidu.com/search?key=%E5%84%BF%E6%AD%8C"
+      },
+      {
+        "name": "经典老歌",
+        "href": "http://music.taihe.com/tag/%e7%bb%8f%e5%85%b8%e8%80%81%e6%ad%8c"
+      },
+      {
+        "name": "影视金曲",
+        "href": "http://music.taihe.com/top/ost"
+      },
+      {
+        "name": "胎教音乐",
+        "href": "https://www.1ting.com/genre/g147p1.html"
+      },
+      {
+        "name": "军营歌曲",
+        "href": "https://www.1ting.com/genre/g136p0/song"
+      },
+      {
+        "name": "中国民乐",
+        "href": "http://music.taihe.com/tag/%e6%b0%91%e6%ad%8c"
+      },
+      {
+        "name": "轻音乐",
+        "href": "http://music.baidu.com/search?key=%E8%BD%BB%E9%9F%B3%E4%B9%90"
+      },
+      {
+        "name": "中国古曲网",
+        "href": "http://www.guqu.net/"
+      },
+      {
+        "name": "欧美金曲",
+        "href": "http://music.taihe.com/top/oumei"
+      },
+      {
+        "name": "网络歌曲",
+        "href": "http://music.taihe.com/search?key=%E7%BD%91%E7%BB%9C%E6%AD%8C%E6%9B%B2"
+      },
+      {
+        "name": "热门对唱",
+        "href": "http://music.taihe.com/tag/%e5%af%b9%e5%94%b1"
+      },
+      {
+        "name": "日韩流行",
+        "href": "http://music.taihe.com/artist/88028280"
+      },
+      {
+        "name": "热门DJ",
+        "href": "http://music.baidu.com/search?key=%E7%83%AD%E9%97%A8DJ"
+      }
+    ]
+  },
+  {
+    "parent": "翻唱K歌",
+    "children": [
+      {
+        "name": "原创音乐基地",
+        "href": "http://5sing.kugou.com/index.html"
+      },
+      {
+        "name": "唱吧",
+        "href": "http://changba.com/"
+      },
+      {
+        "name": "酷我K歌",
+        "href": "http://k.kuwo.cn"
+      },
+      {
+        "name": "我99伴奏网",
+        "href": "http://www.wo99.net/"
+      },
+      {
+        "name": "A8原创音乐",
+        "href": "http://www.a8.com/"
+      },
+      {
+        "name": "麦克疯",
+        "href": "http://www.51mike.com/"
+      },
+      {
+        "name": "爱吼网",
+        "href": "http://www.ihou.com/"
+      },
+      {
+        "name": "MVBox",
+        "href": "http://www.mvbox.cn/"
+      }
+    ]
+  },
+  {
+    "parent": "乐器曲艺",
+    "children": [
+      {
+        "name": "搜谱网",
+        "href": "http://www.sooopu.com/"
+      },
+      {
+        "name": "弹琴吧-吉他谱",
+        "href": "http://www.tan8.com/guitar.html"
+      },
+      {
+        "name": "弹琴吧-钢琴谱",
+        "href": "http://www.tan8.com/piano.html"
+      },
+      {
+        "name": "吉他中国论坛",
+        "href": "http://www.guitarchina.com/"
+      }
+    ]
+  }
+
+]

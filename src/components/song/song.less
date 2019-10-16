@@ -1,0 +1,36 @@
+.song {
+  .container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px #ededed;
+    box-sizing: border-box;
+    padding: 28px 18px 10px 28px ;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 0 0 15px #868686;
+    }
+
+    .left {
+      flex-basis: 100px;
+    }
+    .right {
+      flex:1;
+      display: flex;
+      flex-flow: row wrap;
+      .children {
+        flex-basis: 180px;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 5px;
+        &:hover {
+          background-color: #96d97b;
+        }
+      }
+    }
+  }
+}

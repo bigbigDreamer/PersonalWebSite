@@ -8,6 +8,7 @@ import store from './store'
 import './mock/loginAndRegister'
 import './mock/homeMock'
 import './mock/comment'
+import './mock/song'
 
 // 全局Css样式
 import './assets/less/global.less'
