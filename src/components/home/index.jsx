@@ -78,7 +78,7 @@ export default class Index extends Component {
                                         tab={
                                             <span>
                                               <Icon type="book"/>
-                                              日志
+                                              时间轴
                                             </span>
                                         }
                                         key="2"

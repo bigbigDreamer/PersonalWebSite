@@ -24,6 +24,8 @@ export const getDetailsByKey = (url, data) => {
     });
 };
 
+
+// 喜好文章
 export const handleDoLike = (url,data) => {
     return http.request({
         baseURL: baseUrl + url,
@@ -32,6 +34,7 @@ export const handleDoLike = (url,data) => {
     });
 };
 
+// 浏览量记录
 export const changeArticleEye = (url,data) => {
     return http.request({
         baseURL: baseUrl + url,

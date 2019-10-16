@@ -5,6 +5,7 @@ import propTypes from 'prop-types'
 
 const {TextArea} = Input;
 
+// 高阶组件的二次封装
 const CommentList = ({comments}) => (
     <List
         dataSource={comments}
@@ -14,6 +15,7 @@ const CommentList = ({comments}) => (
     />
 );
 
+// 简单组件
 const Editor = ({onChange, onSubmit, submitting, value}) => (
     <div>
         <Form.Item>
@@ -34,6 +36,7 @@ export default class Comments extends React.Component {
         comments: propTypes.array.isRequired,
         addComment: propTypes.func.isRequired
     };
+
     state = {
         comments: [],
         submitting: false,
