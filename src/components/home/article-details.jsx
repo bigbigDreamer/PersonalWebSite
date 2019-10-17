@@ -41,12 +41,11 @@ export default class ArticleDetails extends Component {
 
                 {/*动态渲染html*/}
                 <div dangerouslySetInnerHTML={{__html: articleData.content}}>
-
                 </div>
                 <br/>
 
                 {/*评论部分*/}
-                <Comments key={this.props.match.params.key} comments={[]}/>
+                <Comments key={this.props.match.params.key} comments={[]} />
             </div>
         )
     }

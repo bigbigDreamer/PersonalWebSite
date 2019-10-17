@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import {Row, Col, Input, Tabs, Icon, BackTop} from 'antd';
+import {Row, Col, Tabs, Icon, BackTop} from 'antd';
 import './home.less'
 import {SecondaryRoute} from '../../router/secondary-route'
 import headerImg from '../../assets/images/header.jpg'
 
 const {TabPane} = Tabs;
 
-const {Search} = Input;
 
 export default class Index extends Component {
     state = {};
@@ -56,12 +55,7 @@ export default class Index extends Component {
                             <img src={headerImg} alt=""/>
                             <div className="container">
                                 <p>Personal WebSite</p>
-                                <Search
-                                    placeholder="input search text"
-                                    onSearch={value => console.log(value)}
-                                    style={{width: 400, fontSize: 18, marginTop: 58,marginBottom:18}}
-                                    size={'large'}
-                                />
+                                <input type="text" />
                                 <br/>
                                 <Tabs defaultActiveKey="1" onTabClick={(activeKey) => this.handleChangeTab(activeKey)}>
                                     <TabPane

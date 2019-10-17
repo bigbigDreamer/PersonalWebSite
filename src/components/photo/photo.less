@@ -1,0 +1,37 @@
+html, body, .photo {
+  height: 100%;
+}
+
+.photo {
+  display: flex;
+  flex-flow: wrap row;
+  min-height: 1200px;
+  height: 100%;
+
+  .type {
+    flex-basis: 500px;
+    height: 200px;
+    border-radius: 18px;
+    margin: 5px;
+
+    .container {
+      img {
+        width: 100%;
+        border-radius: 18px;
+        filter: blur(4px);
+
+        &:hover {
+          transform: scale(0.8);
+          transition: .8s;
+          filter: blur(0);
+        }
+      }
+
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}
